@@ -1,5 +1,5 @@
 /** Problem -03 ( Medicine Planner ) */
-var lastDay = 6;
+var lastDay = 11;
 //write your code here
 
 if(lastDay > 3 && lastDay <=30){

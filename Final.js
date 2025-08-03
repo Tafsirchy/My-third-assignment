@@ -1,8 +1,12 @@
 /** Problem -01 ( Divide the Asset ) */
 var area = 800;
 //write your code here
-area = area / 2;
-console.log(area);
+
+if (area > 0 && area <= 1000000000){
+    area = area / 2;
+    console.log(area);
+}
+
 
 
 
@@ -20,8 +24,10 @@ else{
 }
 
 
+
+
 /** Problem -03 ( Medicine Planner ) */
-var lastDay = 6;
+var lastDay = 11;
 //write your code here
 
 if(lastDay > 3 && lastDay <=30){
@@ -35,6 +41,8 @@ if(lastDay > 3 && lastDay <=30){
      
     }
 }
+
+
 
 
 /** Problem 04 - (Delete / Store) */
@@ -51,9 +59,27 @@ else{
 }
 
 
+
+
 /** Problem 05 - ( PH Email Generator )  */
 var student= { name: "jhanku" , roll: 1014 ,department: "cse" };
 //write your code here
 
 var email = student.name + student.roll  + '.' + student.department + '@ph.ac.bd';
 console.log(email);
+
+
+
+
+/** Problem 06 :  (Current Salary )  */
+var experience = 30;
+var startingSalary = 45000;
+//write your code here
+
+if(startingSalary > 0 && startingSalary <= 1000000000){
+    if(experience > 0 && experience <= 50){
+        salaryGrowth = Math.pow(1.05, experience);
+        currentSalary = startingSalary * salaryGrowth;
+        console.log(currentSalary.toFixed(2));
+    }
+}
